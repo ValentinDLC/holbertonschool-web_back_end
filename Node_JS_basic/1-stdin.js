@@ -8,6 +8,6 @@ process.stdin.on('data', (input) => {
 });
 
 // Close the process when the user ends the input
-process.stdin.on('close', () => {
+process.stdin.on('end', () => {
   process.stdout.write('This important software is now closing\n');
 });
